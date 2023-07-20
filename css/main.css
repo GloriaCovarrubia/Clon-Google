@@ -1,0 +1,204 @@
+
+body{
+    /*MARGIN -Margen*/
+    margin: 0;
+    /*PADDING - Margen pa´dentro sirve para estilizar*/
+    padding: 0;
+    /*FONT-SIZE - Tamaño de letra*/
+    font-size: 13px;
+    /*FRONT-FAMILY - Tipografía*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/**********************************************/
+/****************************************/
+/********************************/
+/* Navegación */
+
+header{
+    
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    /* Alinear verticalmete la lista*/
+    align-items: center;
+}
+
+a{
+    /* Quitar la raya del subrayado */
+    text-decoration: none;
+    /* Cambiar el cursor a un pointer */
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    /* Separar cada pabra entre ellas */
+    margin-right: 25px;
+    color: #000000DE;
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+nav .nav-right-section img{
+    border-radius: 30px;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+/**********************************************/
+/****************************************/
+/********************************/
+/* Main */
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    /* stea 0 al margen de arriba y abajo -- auto (settea en auto bordes de izquierda y derecha, es decir se centra automaticamente*/
+    /* Vertical / Horizontal*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+main .main-logo img{
+    height: 120px;
+}
+
+/* sección input*/
+main .main-input{
+    margin: 0 auto;
+    width: 550px;
+    margin-bottom: 40px;
+}
+
+main .main-input-contrainer{
+     /* borde y pide -- anchura de línea, estilo y color */
+      /* style: dotted, solid , inset */
+    border: 1px solid #dfe1e5;
+     /* bordes redondeados*/
+    border-radius: 20px;
+    width: 525px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ /* cajita de input*/
+main .main-input input{
+    height: 25px;
+    border: none;
+    /* Borde que se activa al seleccionar elementos*/
+    outline: none;
+    width: 395px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* es caso de no aparecer el icono hay que poner with - heat*/
+    height: 17px;
+    width: 17px;
+}
+
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 17px;
+   
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 17px;
+}
+
+main .main-buttons{
+    width: 550px;
+    /*Vertical - Horizontal*/
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* Inine Block - Se alinean los elementos en una linea*/
+    display: inline-block;
+}
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    /*Espacio arriba - Espacio abajo*/
+    padding: 0 5px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+     /* HOVER - reacion del elemento al interactuar cn el sin necesidad de seleccionar*/
+main .main-input-contrainer:hover{
+    /* offset-x / offset-y / blur-radius / color */
+    box-shadow: 0 0 5px #20212447;
+}
+main .main-buttons button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 5px #20212447;
+}
+footer{
+    background-color: rgb(194, 192, 192);
+    
+}
+footer .footer-left{
+    display: flex;
+    align-items: center;
+    list-style: none;  
+    font-size: 15px;
+}
+
+footer .footer-left a{
+    margin-right: 35px;
+}
+
+footer .footer-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    bottom:0;
+    font-size: 15px;
+}
+footer .footer-right a{
+    margin-right: 35px;
+  
+}
